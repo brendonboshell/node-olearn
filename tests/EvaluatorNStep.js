@@ -54,31 +54,31 @@ buildMcClassifier = function () {
 
 samples = [
   {
-    features: [3, 2, 1],
+    features: [1, 2, 3],
     label: 1
   },
   {
-    features: [6, 5, 4],
+    features: [4, 5, 6],
     label: 1
   },
   {
-    features: [9, 8, 7],
+    features: [7, 8, 9],
     label: 2
   },
   {
-    features: [12, 11, 10],
+    features: [10, 11, 12],
     label: 2
   },
   {
-    features: [15, 11, 10],
+    features: [13, 14, 15],
     label: 2
   },
   {
-    features: [15, 11, 10],
+    features: [16, 17, 18],
     label: 2
   },
   {
-    features: [18, 17, 16],
+    features: [19, 20, 21],
     label: 1
   }
 ];
@@ -109,7 +109,7 @@ exports.testError2Step = function(test) {
   evaluatorNStep = new EvaluatorNStep(2);
   test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[0]), 1);
   test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[1]), 1);
-  test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[2]), 1);
+  test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[2]), 0.5);
   test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[3]), 1);
   test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[4]), 1);
   test.strictEqual(evaluatorNStep.evaluate(mcClassifier, samples[5]), 1);
