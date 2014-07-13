@@ -1,0 +1,15 @@
+{
+  "name": "olearn",
+  "version": "0.1.0",
+  "description": "Collection of online classification algorithms. Online random forest.",
+  "keywords": ["classifier", "machine learning"],
+  "homepage": "https://github.com/brendonboshell/node-olearn",
+  "bugs": {
+    "url": "https://github.com/brendonboshell/node-olearn/issues"
+  },
+  "license": "MIT",
+  "main": "./lib/index",
+  "directories": {
+    "lib": "./lib"
+  }
+}
